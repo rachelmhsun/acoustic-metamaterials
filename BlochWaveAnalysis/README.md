@@ -73,6 +73,7 @@ Please follow along on "D:\acousticMetamats\refFiles\bracedCubicUC_UC60Rho15_wit
 ![ResultsTableGraph](BlochWaveTutorialImages/ResultsTableGraph.png)
 
 ### Plot a Dispersion Relation in Matlab  
+0. The following steps can be done with a COMSOL method. Run a method by navigating to "Developer" -> "New Method" -> copy and paste the lines in "extractFrequencyTable.txt" into the editor that appears after you give your method a name and click "ok". 
 1. Right click on “Derived Values” and select “Global Evaluation” 
 2. Type “real(freq)” into the expressions table and make sure your data set is the “Parametric Solutions” dataset. Then click “Evaluate”.
     - If it looks like part of the dataset is missing, go to: Table 1 Settings -> Storage -> Maximum Number of Rows. Increase the number of rows to something that will accommodate the full data set. 

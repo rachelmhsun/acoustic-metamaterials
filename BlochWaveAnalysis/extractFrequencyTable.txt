@@ -1,0 +1,9 @@
+model.result().numerical().create("gev1", "EvalGlobal");
+model.result().numerical("gev1").setIndex("expr", "real(freq)", 0);
+model.result().numerical("gev1").set("data", "dset2");
+model.result().table().create("tbl1", "Table");
+model.result().table("tbl1").comments("Global Evaluation 1");
+model.result().numerical("gev1").set("table", "tbl1");
+model.result().table("tbl1").set("tablebuffersize", 100000000);
+model.result().numerical("gev1").set("table", "tbl1");
+model.result().numerical("gev1").setResult();
